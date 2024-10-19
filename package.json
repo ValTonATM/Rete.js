@@ -1,8 +1,12 @@
 {
-  "name": "retejs-v2-chatbot-programming",
+  "name": "Jonny Editor",
   "version": "1.0.0",
+  "homepage": "https://persona.games/mt/editor",
   "description": null,
-  "keywords": ["rete.js", "rete.js 2"],
+  "keywords": [
+    "rete.js",
+    "rete.js 2"
+  ],
   "main": "src/index.tsx",
   "dependencies": {
     "@types/styled-components": "5.1.26",
@@ -11,12 +15,13 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-markdown": "8.0.6",
-    "react-scripts": "4.0.3",
+    "react-scripts": "^5.0.1",
     "rete": "2.0.3",
     "rete-area-plugin": "2.0.4",
     "rete-auto-arrange-plugin": "2.0.1",
     "rete-connection-plugin": "2.0.3",
     "rete-context-menu-plugin": "2.0.3",
+    "rete-dock-plugin": "^2.0.2",
     "rete-engine": "2.0.1",
     "rete-react-plugin": "2.0.5",
     "rete-render-utils": "2.0.2",
@@ -35,5 +40,10 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "browserslist": [">0.2%", "not dead", "not ie <= 11", "not op_mini all"]
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }

@@ -1,22 +1,25 @@
 import { GetSchemes } from "rete";
 import { Connection } from "./connection";
 import {
-  DebugChat,
-  Message,
-  OnMessage,
-  MatchMessage,
-  SendMessage
+  Minigame,
+  Switch,
+  Intermediate,
+  StartGame,
+  EndGame
 } from "./nodes";
 
 export type NodeProps =
-  | DebugChat
-  | Message
-  | OnMessage
-  | MatchMessage
-  | SendMessage;
+  | Minigame
+  | Switch
+  | Intermediate
+  |StartGame
+  |EndGame;
 export type ConnProps =
-  | Connection<Message, SendMessage>
-  | Connection<MatchMessage, SendMessage>
-  | Connection<OnMessage, MatchMessage>;
+  | Connection<Minigame, Switch>
+  | Connection<Switch, Switch>
+  | Connection<Intermediate, Minigame>
+  |Connection<StartGame, Minigame>
+  |Connection<EndGame, Minigame>;
+
 
 export type Schemes = GetSchemes<NodeProps, ConnProps>;

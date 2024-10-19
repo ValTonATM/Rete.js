@@ -9,10 +9,10 @@
 }
 
 .background {
-  background-color: #f7f6ff;
+  background-color: #111;
   opacity: 1;
-  background-image: radial-gradient(#7b81ff 1.55px, transparent 1.55px),
-    radial-gradient(#7b81ff 1.55px, #f7f6ff 1.55px);
+  background-image: radial-gradient(#ffffff20 1.55px, transparent 1.55px),
+    radial-gradient(#f3f3f339  2.55px, #111  1.55px);
   background-size: 62px 62px;
   background-position: 0 0, 31px 31px;
 }

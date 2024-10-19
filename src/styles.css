@@ -7,10 +7,21 @@ body {
   padding: 0;
 }
 
+.ant-tabs {
+  margin: 0 1em;
+}
+
 .ant-message {
   left: unset !important;
   transform: unset !important;
   width: auto;
   right: 0;
   z-index: 1;
+}
+iframe#webpack-dev-server-client-overlay {
+  display: none;
+}
+
+.ant-tabs .ant-tabs-nav {
+  margin: 0;
 }

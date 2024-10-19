@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "https://persona.games/mt/editor/static/css/main.b39d69c8.css",
+    "main.js": "https://persona.games/mt/editor/static/js/main.29abd8d7.js",
+    "index.html": "https://persona.games/mt/editor/index.html",
+    "main.b39d69c8.css.map": "https://persona.games/mt/editor/static/css/main.b39d69c8.css.map",
+    "main.29abd8d7.js.map": "https://persona.games/mt/editor/static/js/main.29abd8d7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b39d69c8.css",
+    "static/js/main.29abd8d7.js"
+  ]
+}

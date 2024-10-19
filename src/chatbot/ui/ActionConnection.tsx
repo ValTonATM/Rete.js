@@ -5,7 +5,7 @@ import { ClassicScheme, Presets } from "rete-react-plugin";
 const { Connection } = Presets.classic;
 
 const styles = css`
-  stroke: #00000045;
+  stroke: #719ECEC9;
   stroke-dasharray: 10 5;
   animation: dash 1s linear infinite;
   stroke-dashoffset: 45;

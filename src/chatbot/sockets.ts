@@ -18,4 +18,5 @@ export class TextSocket extends ClassicPreset.Socket {
   isCompatibleWith(socket: ClassicPreset.Socket) {
     return socket instanceof TextSocket;
   }
+
 }

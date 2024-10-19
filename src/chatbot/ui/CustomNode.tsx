@@ -1,41 +1,36 @@
 import { Presets, ClassicScheme, RenderEmit } from "rete-react-plugin";
 import { css } from "styled-components";
-import { $fontfamily } from "./consts";
+import { $fontfamily,$cssNodeMain } from "./consts";
 
-const styles = css<{ selected?: boolean }>`
-  background: #191c46dd;
-  border: 5px #cfc7ff solid;
-  border-radius: 25px;
-  transition: background 0.4s;
-  .title {
-    color: white;
-    text-align: center;
-    border-radius: 20px 20px 0 0;
-    border-bottom: 5px #cfc7ff solid;
-    font-family: ${$fontfamily};
-    font-weight: 100;
-    font-size: 1.2em;
-  }
-  &:hover {
-    background: #191c46;
-  }
-  .input-title,
-  .output-title {
-    font-weight: 100;
-    font-family: ${$fontfamily};
-  }
+
+export const styles = css<{ selected?: boolean}>`
+${$cssNodeMain}
+  
+.output{
+margin: 10px 0px -1px;
+}
+
+.control {
+ 
+margin: -160px 0px 151px;
+ margin-right: 30px;
+}
+
   .output-socket {
-    margin-right: -1px;
+    margin-right: 0px;
   }
   .input-socket {
-    margin-left: -1px;
+    margin-left: 0px;
+    position: absolute;
+    top: 50%; left: 0px;
   }
   ${(props) =>
     props.selected &&
     css`
-      border-color: #ff0000c4;
+      border-color: #ffffff;
       .title {
-        border-color: #ff0000c4;
+        border-color: #ffffff;
+      
       }
     `}
 `;
@@ -45,6 +40,9 @@ type Props<S extends ClassicScheme> = {
   styles?: () => any;
   emit: RenderEmit<S>;
 };
+
+
+
 
 export function CustomNodeComponent<S extends ClassicScheme>(props: Props<S>) {
   return <Presets.classic.Node styles={() => styles} {...props} />;
